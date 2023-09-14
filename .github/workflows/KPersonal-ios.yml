@@ -1,0 +1,17 @@
+name: KPersonal-ios
+on: [push, pull_request]
+
+jobs: 
+  windows:
+    name: IOS
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.3'
+          channel: 'stable'
+          architecture: x64
+
+      - name: Flutter Version
+        run: flutter --version
