@@ -11,7 +11,7 @@ jobs:
         with:
           flutter-version: '3.13.3'
           channel: 'stable'
-          
+
       - name: Setup Ubuntu
         run: |
           sudo apt-get update -y
@@ -19,3 +19,14 @@ jobs:
 
       - name: Flutter Version
         run: flutter --version
+
+      - name: Resolving dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+      
+      - name: Build
+        run: |
+          flutter config --enable-linux-desktop
+          flutter build linux

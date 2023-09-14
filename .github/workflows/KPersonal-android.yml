@@ -18,3 +18,14 @@ jobs:
 
       - name: Flutter Version
         run: flutter --version
+
+      - name: Resolving dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+      
+      - name: Build
+        run: | 
+          flutter build apk
+          flutter build appbundle
