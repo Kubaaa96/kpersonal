@@ -1,16 +1,30 @@
-# kpersonal
+# KPersonal
 
-A new Flutter project.
+## Description
 
-## Getting Started
+This will be app with following modules: 
+- Active
+  - Task - Mainly for managing tasks
+  - Time - Managing time periods and tracking time
+  - Flashcards 
+  - Habit - Habit managing and tracking 
+  - Wiki - Storing notes, information in markdown format
+  - Project - Grouping all of the above in Projects
+- Viewing - Modules that represent data in different manners
+  - Timeline  
+  - Calendar
+  - Kanban
+  - List
+- Export - save, load, export and import all data from app
+- Statistics - various statistics for Active and Viewing modules
+- Options - Settings for app and modules
 
-This project is a starting point for a Flutter application.
+## Contributions
 
-A few resources to get you started if this is your first Flutter project:
+If you want to implement some features from Issue list or you have your own feel free to do this. You can just open new issue with your idea to discuss with others.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request to current develop
