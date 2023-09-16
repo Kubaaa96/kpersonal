@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:kpersonal/home_page.dart';
+import 'package:kpersonal/pages/home_page.dart';
 
 void main() {
   runApp(const KPersonalApp());
