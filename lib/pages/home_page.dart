@@ -14,20 +14,21 @@ class HomePage extends StatelessWidget {
         child: IntrinsicWidth(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               RegularButton(
                 onPressed: () => context.go('/task_module'),
-                text: "Task Module",
+                text: 'Task Module',
               ),
               RegularButton(
-                  onPressed: () => context.go('/options'), text: "Options"),
+                onPressed: () => context.go('/options'),
+                text: 'Options',
+              ),
               RegularButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                text: "Exit",
+                text: 'Exit',
               ),
             ],
           ),

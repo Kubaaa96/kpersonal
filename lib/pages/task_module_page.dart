@@ -14,15 +14,14 @@ class TaskModulePage extends StatelessWidget {
         child: IntrinsicWidth(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Text(
-                "Task Module",
+                'Task Module',
               ),
               RegularButton(
                 onPressed: () => context.go('/'),
-                text: "Home Page",
+                text: 'Home Page',
               ),
             ],
           ),

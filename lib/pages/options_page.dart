@@ -12,15 +12,14 @@ class OptionsPage extends StatelessWidget {
         child: IntrinsicWidth(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Text(
-                "Options",
+                'Options',
               ),
               RegularButton(
                 onPressed: () => context.go('/'),
-                text: "Home Page",
+                text: 'Home Page',
               ),
             ],
           ),

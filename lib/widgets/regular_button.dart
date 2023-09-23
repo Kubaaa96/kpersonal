@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class RegularButton extends OutlinedButton {
-  final String text;
   const RegularButton({
-    super.key,
     required this.text,
-    super.child,
     required super.onPressed,
+    super.key,
+    super.child,
   });
+
+  final String text;
 
   @override
   Widget? get child => Text(
