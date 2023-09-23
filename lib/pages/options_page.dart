@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:kpersonal/widgets/regular_button.dart';
 
 class OptionsPage extends StatelessWidget {
@@ -14,13 +15,11 @@ class OptionsPage extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
+              const Text(
                 "Options",
               ),
               RegularButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+                onPressed: () => context.go('/'),
                 text: "Home Page",
               ),
             ],

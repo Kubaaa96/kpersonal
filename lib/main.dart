@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:kpersonal/pages/home_page.dart';
+import 'package:kpersonal/kpersonal_router.dart';
 
 void main() {
   runApp(const KPersonalApp());
@@ -11,9 +11,8 @@ class KPersonalApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "KPersonal App",
-      home: HomePage(),
+    return MaterialApp.router(
+      routerConfig: KPersonalRouter(),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kpersonal/pages/options_page.dart';
-import 'package:kpersonal/pages/task_module_page.dart';
+
+import 'package:go_router/go_router.dart';
+
 import 'package:kpersonal/widgets/regular_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,26 +18,11 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               RegularButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TaskModulePage(),
-                    ),
-                  );
-                },
+                onPressed: () => context.go('/task_module'),
                 text: "Task Module",
               ),
               RegularButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const OptionsPage(),
-                      ),
-                    );
-                  },
-                  text: "Options"),
+                  onPressed: () => context.go('/options'), text: "Options"),
               RegularButton(
                 onPressed: () {
                   Navigator.pop(context);

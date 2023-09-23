@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
+import 'package:go_router/go_router.dart';
+
 import 'package:kpersonal/widgets/regular_button.dart';
-import 'package:kpersonal/pages/options_page.dart';
 
 class TaskModulePage extends StatelessWidget {
   const TaskModulePage({super.key});
@@ -19,9 +21,7 @@ class TaskModulePage extends StatelessWidget {
                 "Task Module",
               ),
               RegularButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+                onPressed: () => context.go('/'),
                 text: "Home Page",
               ),
             ],
