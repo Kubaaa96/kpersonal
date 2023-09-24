@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
 
-import 'package:kpersonal/widgets/regular_button.dart';
+import 'package:kpersonal/features/core/widgets/regular_button.dart';
 
 class TaskModulePage extends StatelessWidget {
   const TaskModulePage({super.key});

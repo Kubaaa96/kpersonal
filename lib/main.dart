@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:kpersonal/kpersonal_router.dart';
+import 'package:kpersonal/features/core/kpersonal_router.dart';
 
 void main() {
   runApp(const KPersonalApp());
